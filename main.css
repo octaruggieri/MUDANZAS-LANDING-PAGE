@@ -247,12 +247,15 @@ nav {
 }
 
 .customisation {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("assets/customisation.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("images/banner\ 2.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+
+
 
 .customisation__container {
   text-align: center;
@@ -330,7 +333,7 @@ nav {
 
 .price__card h3 {
   margin-bottom: 1rem;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--secondary-color-dark);
   transition: 0.3s;
@@ -340,6 +343,7 @@ nav {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--text-light);
+  
 }
 
 .price__card:hover h3 {
@@ -358,7 +362,7 @@ nav {
 
 .contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("assets/contact.jpg");
+    url("images/mudanzas.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -374,13 +378,43 @@ nav {
   gap: 1rem;
 }
 
+
+/* Estilos para botones con la clase .btn-our-services */
+.btn-our-services:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-our-services:active {
+  transform: scale(0.95);
+}
+
+/* Estilos para botones con la clase .btn-contact-us */
+.btn-contact-us:hover {
+  background-color: #007BFF; /* Color diferente al pasar el mouse */
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+.btn-contact-us:active {
+  transform: scale(0.95);
+}
+
+
 .contact__btns .btn:nth-child(1) {
   background-color: transparent;
   border: 2px solid var(--white);
 }
 
 .contact__btns .btn:nth-child(2) {
-  color: var(--primary-color);
+  color: #52c976;
   background-color: var(--white);
   border: 2px solid var(--white);
 }
@@ -640,3 +674,37 @@ nav {
     gap: 2rem;
   }
 }
+
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px; /* Ajusta la distancia desde abajo según tu preferencia */
+  right: 20px; /* Ajusta la distancia desde la derecha según tu preferencia */
+  z-index: 1000;
+  border-radius: 50%;
+  background-color: #25d366; /* Color de fondo de WhatsApp */
+  width: 60px; /* Ancho del botón */
+  height: 60px; /* Altura del botón */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad al botón */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.floating-button:hover {
+  background-color: #128C7E; /* Cambia el color de fondo al pasar el cursor */
+  transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el cursor */
+
+}
+
+.floating-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.floating-button i {
+  font-size: 45px; /* Ajusta el tamaño del icono de WhatsApp según tu preferencia */
+}
+
